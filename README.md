@@ -54,6 +54,6 @@
 
 ---
 
-### ✅ Câu 6: Tác giả & nhóm
-- **Nhóm**: Group 20 – Môn Lập trình hướng đối tượng  
-- **Sinh viên**: Đặng Thanh Hiếu
+### ✅ Câu 6: Link ReadME
+Link: https://github.com/Hieu-alt/Group20_OOP_NO2_term3_2025/blob/main/README.md
+
