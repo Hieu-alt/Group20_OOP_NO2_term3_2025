@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "qltv.Main",
+      "projectName": "medical-record-management"
+    },
+    {
+      "type": "java",
+      "name": "Chạy Main.java",
+      "request": "launch",
+      "mainClass": "qltv.Main",
+      "projectName": "Group20_OOP_NO2_term3_2025"
+    }
+  ]
+}
