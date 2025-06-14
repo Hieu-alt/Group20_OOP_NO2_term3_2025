@@ -1,0 +1,30 @@
+# Bỏ qua file class sau khi biên dịch
+*.class
+
+# Bỏ qua thư mục biên dịch tự động
+/bin/
+/build/
+out/
+target/
+
+# Bỏ qua file của IDE (Visual Studio Code, IntelliJ, Eclipse)
+.vscode/
+.idea/
+*.iml
+*.classpath
+*.project
+*.settings/
+
+# File hệ thống và tạm thời
+*.log
+*.tmp
+*.swp
+*.bak
+*.~ 
+*.DS_Store
+Thumbs.db
+
+# File dữ liệu đầu ra (nếu có)
+*.dat
+*.csv
+data/
