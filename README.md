@@ -109,7 +109,58 @@ Lấy tên người chơi, số đoán → tạo LuotChoi mới → thêm vào T
 Nội dung 2:
 ![image](https://github.com/user-attachments/assets/86975c3f-7a10-44de-898a-6f0e70b67bdd)
 
-
 ---
+
 Nội dung 3:
 https://github.com/Hieu-alt/Group20_OOP_NO2_term3_2025
+
+---
+
+Practice 6: 
+Nội dung 1: 
+![practice5](https://github.com/user-attachments/assets/6e5d3269-7d89-47c4-bb8d-89eef9beacf1)
+
+---
+
+Nội dung 2:
+- Code:
+
+package logic;
+
+public class XuLyGame {
+    public static String xuLyDoanSo(int soDoan, int soBiMat) {
+        if (soDoan == soBiMat) {
+            return "🎉 Đoán đúng! Bạn thắng.";
+        } else if (soDoan < soBiMat) {
+            return "❌ Số bạn đoán nhỏ hơn số bí mật.";
+        } else {
+            return "❌ Số bạn đoán lớn hơn số bí mật.";
+        }
+    }
+}
+
+
+- Ảnh chụp màn hình: ![image](https://github.com/user-attachments/assets/9e3d1af9-0c5b-4822-9131-cd617e569521)
+
+
+- Phương thức kiểm tra số đoán
+
+Tên xuLyDoanSo  
+Thuộc lớp XuLyGame (gói logic)  
+Chức năng So sánh số người chơi đoán với số bí mật và trả về phản hồi tương ứng.
+
+Tham số
++) `soDoan`: số mà người chơi đoán
++) `soBiMat`: số bí mật
+
+Kết quả trả về: Chuỗi thông báo kết quả đoán
+
+Nội dung 3: 
+https://github.com/Hieu-alt/Group20_OOP_NO2_term3_2025
+
+Practice 8:
+
+Ảnh: ![image](https://github.com/user-attachments/assets/4ca65a06-dbe5-456c-a57e-6fca7a737352)
+
+Link repo: https://github.com/Hieu-alt/Group20_OOP_NO2_term3_2025
+
