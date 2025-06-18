@@ -86,3 +86,30 @@ Kiểm thử đầy đủ trong class QuanLyTroChoi
 
 Cập nhật tài liệu kiểm thử và hướng dẫn sử dụng vào README/Wiki
 
+---
+
+Practice 5: 
+Nội dung 1: 03 phương thức hoạt động chính của hệ thống "Game Đoán Số"
+- 1. Hiển thị tất cả lượt chơi của một người chơi
+Trong class QuanLyTroChoi
+
+Duyệt toàn bộ danh sách trò chơi và in ra lượt chơi của người chơi nhập từ bàn phím
+
+- 2. Tìm kiếm người chơi theo tên (sử dụng stream)
+Trong class QuanLyTroChoi
+
+Duyệt danh sách NguoiChoi trong tất cả TroChoi, lọc bằng stream().filter(...)
+
+- 3. Thêm lượt chơi mới
+Trong class TroChoi và được sử dụng trong QuanLyTroChoi
+
+Lấy tên người chơi, số đoán → tạo LuotChoi mới → thêm vào TroChoi
+
+---
+Nội dung 2:
+![image](https://github.com/user-attachments/assets/86975c3f-7a10-44de-898a-6f0e70b67bdd)
+
+
+---
+Nội dung 3:
+https://github.com/Hieu-alt/Group20_OOP_NO2_term3_2025
