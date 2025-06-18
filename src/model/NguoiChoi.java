@@ -8,8 +8,15 @@ public class NguoiChoi {
     }
 
     public void doanSo() {
+    try {
         soLanDoan++;
+    } catch (Exception e) {
+        System.err.println("Lỗi khi tăng số lần đoán: " + e.getMessage());
+    } finally {
+        System.out.println("Đã xử lý phương thức doanSo().");
     }
+}
+
 
     public int getSoLanDoan() {
         return soLanDoan;

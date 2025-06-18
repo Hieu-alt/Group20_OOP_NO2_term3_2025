@@ -48,26 +48,35 @@ public class TroChoiGUI extends JFrame {
     }
 
     private void khoiTaoSoBiMat() {
+    try {
         Random rand = new Random();
         soBiMat = rand.nextInt(100) + 1;
+    } catch (Exception e) {
+        System.err.println("Lỗi khi khởi tạo số bí mật: " + e.getMessage());
+        soBiMat = 1; // gán mặc định để tránh null
+    } finally {
+        System.out.println("Đã tạo số bí mật.");
     }
+}
+
 
     private void doDoan() {
-        String ten = tenField.getText().trim();
-        if (ten.isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Vui lòng nhập tên!", "Thiếu tên", JOptionPane.WARNING_MESSAGE);
-            return;
-        }
+    String ten = tenField.getText().trim();
+    if (ten.isEmpty()) {
+        JOptionPane.showMessageDialog(this, "Vui lòng nhập tên!", "Thiếu tên", JOptionPane.WARNING_MESSAGE);
+        return;
+    }
 
-        String soNhap = doanField.getText().trim();
-        int so;
-        try {
-            so = Integer.parseInt(soNhap);
-        } catch (NumberFormatException e) {
-            ketQuaLabel.setText("Vui lòng nhập một số hợp lệ!");
-            return;
-        }
+    String soNhap = doanField.getText().trim();
+    int so;
+    try {
+        so = Integer.parseInt(soNhap);
+    } catch (NumberFormatException e) {
+        ketQuaLabel.setText("Vui lòng nhập một số hợp lệ!");
+        return;
+    }
 
+    try {
         soLanDoan++;
         int luotCon = soLanToiDa - soLanDoan;
 
@@ -86,7 +95,13 @@ public class TroChoiGUI extends JFrame {
             ketQuaLabel.setText("😢 Hết lượt! Số đúng là: " + soBiMat);
             doanField.setEnabled(false);
         }
+    } catch (Exception e) {
+        ketQuaLabel.setText("Đã xảy ra lỗi khi xử lý đoán số.");
+        System.err.println("Lỗi xử lý đoán số: " + e.getMessage());
+    } finally {
+        System.out.println("Đã xử lý xong một lần đoán.");
     }
+}
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
